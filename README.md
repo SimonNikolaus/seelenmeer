@@ -5,21 +5,22 @@ Modernisierung von https://seelenmeer.eu/ als statische Website mit
 
 ## Struktur
 
+Die Seite ist ein One-Pager mit Anker-Navigation und Scrollspy:
+
 ```
-index.html        Home (Hero, Über mich, Werte, CTA)
-coaching.html     Coaching (Text, Zielgruppen, Ablauf, FAQ, CTA)
-meditation.html   Meditation (Coming soon)
-kontakt.html      Kontakt (Kontaktkarte + Kennenlerngespräch-Formular → Mail)
-impressum.html    Impressum (Adressdaten als Platzhalter markiert)
+index.html        One-Pager: #home, #ueber-mich, #coaching (Zielgruppen,
+                  Ablauf, FAQ), #meditation (Coming soon), #kontakt
+                  (Kontaktkarte + Kennenlerngespräch-Formular → Mail)
+impressum.html    Impressum (noindex; Adressdaten als Platzhalter markiert)
 robots.txt        Crawling-Regeln inkl. Sitemap-Verweis
-sitemap.xml       Alle Seiten mit Prioritäten
-llms.txt          Zusammenfassung für KI-Crawler
+sitemap.xml       Einzige indexierbare URL (https://seelenmeer.eu/)
+llms.txt          Zusammenfassung der Anchor-Struktur für KI-Crawler
 favicon.svg       Wellen-Markenzeichen
 og-cover.svg      Social-Preview-Bild (1200×630)
 css/input.css     Tailwind/DaisyUI-Quelle inkl. Custom-Theme „seelenmeer“
-css/site.css      Kompiliertes, minifiziertes CSS (7 klassische daisyUI-Komponenten)
+css/site.css      Kompiliertes, minifiziertes CSS
 js/main.js        Fortschreitendes Enhancement (Jahr, Scroll-Schatten,
-                  E-Mail kopieren, Formular → mailto)
+                  Scrollspy, E-Mail kopieren, Formular → mailto)
 ```
 
 ## Build
@@ -37,9 +38,10 @@ freundlich, System-Schriftstacks statt herange ladener Webfonts).
 
 ## SEO
 
-- Eindeutiger Title + Meta-Description je Seite, Canonical URLs, OG/Twitter-Cards.
-- JSON-LD: `Person`, `ProfessionalService`, `WebSite`, `Service`, `BreadcrumbList`, `ContactPage` (@graph mit stabilen @ids).
-- Frame-freies, semantisches HTML (ein `h1` je Seite, Landmarks, Skip-Link).
+- Konsolidierte Meta-Tags + Canonical `https://seelenmeer.eu/`, OG/Twitter-Cards.
+- JSON-LD @graph mit stabilen @ids: `Person`, `ProfessionalService`, `WebSite`,
+  `OfferCatalog` (Kennenlerngespräch, Einzelcoaching, Coaching-Pakete).
+- Semantisches HTML (eine `h1`, Landmarks, Skip-Link), Anker-Ziele mit Scroll-Margin.
 - Impressum als `noindex` markiert.
 
 ## Vor Veröffentlichung ergänzen
@@ -53,5 +55,5 @@ freundlich, System-Schriftstacks statt herange ladener Webfonts).
    mit glatten Posen verzichten.
 3. `og-cover.svg` gegen ein PNG/JPG (1200×630) tauschen, da einige
    Plattformen kein SVG für OG-Bilder unterstützen.
-3. Kontaktformular nutzt `mailto:`; für echten Mailversand später ein
+4. Kontaktformular nutzt `mailto:`; für echten Mailversand später ein
    Formular-Backend (z. B. formsimple, Netlify Forms, eigener Endpoint) anbinden.

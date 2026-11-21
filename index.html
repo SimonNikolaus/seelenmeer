@@ -7,21 +7,21 @@
 <meta name="description" content="Seelenmeer Coaching mit Maria Papadopoulos: deiner Seele näher kommen, den sicheren Hafen in dir finden und mutig zu neuen Ufern aufbrechen. Jetzt kennenlernen.">
 <link rel="canonical" href="https://seelenmeer.eu/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<meta name="theme-color" content="#35607a">
+<meta name="theme-color" content="#3d6a80">
 <meta name="robots" content="index,follow">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Seelenmeer Coaching">
 <meta property="og:locale" content="de_DE">
 <meta property="og:title" content="Seelenmeer Coaching – Tauche ein &amp; treibe">
-<meta property="og:description" content="Dein sicheres Boot auf dem Meer der Möglichkeiten: Coaching für Jugendliche und Erwachsene mit Maria Papadopoulos.">
+<meta property="og:description" content="Dein sicherer Anker auf dem Meer der Möglichkeiten: Coaching für Jugendliche und Erwachsene mit Maria Papadopoulos.">
 <meta property="og:url" content="https://seelenmeer.eu/">
 <meta property="og:image" content="https://seelenmeer.eu/og-cover.svg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Illustration von Wellen mit dem Schriftzug Seelenmeer Coaching">
+<meta property="og:image:alt" content="Feine Horizontlinien in Petrol und Salbei mit dem Schriftzug Seelenmeer – Tauche ein und treibe">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Seelenmeer Coaching – Tauche ein &amp; treibe">
-<meta name="twitter:description" content="Dein sicheres Boot auf dem Meer der Möglichkeiten: Coaching für Jugendliche und Erwachsene mit Maria Papadopoulos.">
+<meta name="twitter:description" content="Dein sicherer Anker auf dem Meer der Möglichkeiten: Coaching für Jugendliche und Erwachsene mit Maria Papadopoulos.">
 <meta name="twitter:image" content="https://seelenmeer.eu/og-cover.svg">
 <link rel="stylesheet" href="css/site.css">
 <script src="js/main.js" defer></script>
@@ -49,7 +49,16 @@
       "founder": { "@id": "https://seelenmeer.eu/#person" },
       "areaServed": { "@type": "Country", "name": "Deutschland" },
       "knowsAbout": ["Coaching", "Potenzialentfaltung", "Berufsorientierung", "Jugendhilfe"],
-      "description": "Coaching für Jugendliche und Erwachsene: Einzelcoachings und Coaching-Pakete rund um Berufung, Potenzial und mutige Lebensentscheidungen."
+      "description": "Coaching für Jugendliche und Erwachsene: Einzelcoachings und Coaching-Pakete rund um Berufung, Potenzial und mutige Lebensentscheidungen.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Coaching-Angebote",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Kostenfreies Kennenlerngespräch" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Einzelcoaching" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Coaching-Pakete" } }
+        ]
+      }
     },
     {
       "@type": "WebSite",
@@ -69,7 +78,7 @@
 
 <header class="navbar sticky top-0 z-50 border-b border-base-300/60 bg-base-100/90 px-4 backdrop-blur sm:px-6">
   <div class="flex-1">
-    <a href="index.html" class="flex items-center gap-2" aria-label="Seelenmeer Coaching – Startseite">
+    <a href="#home" class="flex items-center gap-2" aria-label="Seelenmeer Coaching – zum Seitenanfang">
       <svg class="size-8 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
         <path d="M2 9.5c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3"/>
         <path d="M2 15c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3"/>
@@ -79,15 +88,15 @@
   </div>
   <nav class="hidden md:block" aria-label="Hauptnavigation">
     <ul class="menu menu-horizontal gap-1 px-1">
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="coaching.html">Coaching</a></li>
-        <li><a href="meditation.html">Meditation</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="#home" data-nav="home">Home</a></li>
+        <li><a href="#coaching" data-nav="coaching">Coaching</a></li>
+        <li><a href="#meditation" data-nav="meditation">Meditation</a></li>
+        <li><a href="#kontakt" data-nav="kontakt">Kontakt</a></li>
         <li><a href="impressum.html">Impressum</a></li>
     </ul>
   </nav>
   <div class="hidden md:flex">
-    <a href="kontakt.html#gespraech" class="btn btn-primary btn-sm ml-3">Kennenlerngespräch</a>
+    <a href="#gespraech" class="btn btn-primary btn-sm ml-3">Kennenlerngespräch</a>
   </div>
   <div class="dropdown dropdown-end md:hidden">
     <button class="btn btn-ghost btn-square btn-sm" aria-label="Menü öffnen">
@@ -96,19 +105,19 @@
       </svg>
     </button>
     <ul class="dropdown-content menu z-50 mt-2 w-60 rounded-box border border-base-300 bg-base-100 p-2 shadow-lg">
-      <li><a href="index.html" aria-current="page">Home</a></li>
-      <li><a href="coaching.html">Coaching</a></li>
-      <li><a href="meditation.html">Meditation</a></li>
-      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="#home" data-nav="home">Home</a></li>
+      <li><a href="#coaching" data-nav="coaching">Coaching</a></li>
+      <li><a href="#meditation" data-nav="meditation">Meditation</a></li>
+      <li><a href="#kontakt" data-nav="kontakt">Kontakt</a></li>
       <li><a href="impressum.html">Impressum</a></li>
-      <li class="mt-2"><a href="kontakt.html#gespraech" class="btn btn-primary btn-sm">Kennenlerngespräch</a></li>
+      <li class="mt-2"><a href="#gespraech" class="btn btn-primary btn-sm">Kennenlerngespräch</a></li>
     </ul>
   </div>
 </header>
 
 <main id="main" class="flex-1">
 
-<section class="hero-wash relative border-b border-base-300/70" aria-labelledby="hero-title">
+  <section id="home" class="hero-wash relative scroll-mt-20 border-b border-base-300/70" aria-labelledby="hero-title">
     <div class="mx-auto grid max-w-6xl items-center gap-16 px-6 py-20 md:grid-cols-[1.25fr_1fr] md:py-28">
       <div>
         <p class="eyebrow">Coaching für Jugendliche &amp; Erwachsene</p>
@@ -120,8 +129,8 @@
           »Hier ist das Boot auf dem Meer der Möglichkeiten, auf dem du Halt findest und durchatmen kannst, um deiner Seele näher zu kommen. Ich helfe dir, deinen sicheren Hafen in dir zu finden, und begleite dich zu neuen und lang ersehnten Ufern.«
         </blockquote>
         <div class="mt-10 flex flex-wrap gap-4">
-          <a href="coaching.html" class="btn btn-primary btn-lg">Coaching entdecken</a>
-          <a href="kontakt.html#gespraech" class="btn btn-lg btn-outline">Kostenfreies Kennenlerngespräch</a>
+          <a href="#coaching" class="btn btn-primary btn-lg">Coaching entdecken</a>
+          <a href="#gespraech" class="btn btn-lg btn-outline">Kostenfreies Kennenlerngespräch</a>
         </div>
       </div>
       <figure class="justify-self-center md:justify-self-end">
@@ -148,10 +157,10 @@
     </div>
   </section>
 
-  <section class="py-24 md:py-32" aria-labelledby="ueber-mich">
+  <section id="ueber-mich" class="scroll-mt-20 py-24 md:py-32" aria-labelledby="ueber-mich-title">
     <div class="mx-auto max-w-3xl px-6">
       <p class="eyebrow">Über mich</p>
-      <h2 id="ueber-mich" class="font-display mt-4 text-3xl font-semibold sm:text-4xl">Menschen und ihre einzigartigen Geschichten.</h2>
+      <h2 id="ueber-mich-title" class="font-display mt-4 text-3xl font-semibold sm:text-4xl">Einfach sein. Auf dem Weg begleiten.</h2>
       <div class="prose-meer mt-8 text-lg leading-relaxed">
         <p>Mein Name ist Maria Papadopoulos. Ich bin Kulturanthropologin, Coachin, Teamleitung in der Jugendhilfe in Schule – und ich liebe Menschen und ihre einzigartigen Geschichten.</p>
         <p>Mein Anliegen und zugleich tiefster Wunsch ist es, Menschen zu helfen, ihr inneres Licht zu finden, mutig neue Wege zu gehen und zu erkennen, welcher Schatz in ihnen steckt.</p>
@@ -165,58 +174,162 @@
     </div>
   </section>
 
-  <section class="bg-base-200 py-24 md:py-32" aria-labelledby="werte-title">
-    <div class="mx-auto max-w-6xl px-6">
-      <p class="eyebrow text-center">Der Ort</p>
-      <h2 id="werte-title" class="font-display mt-4 text-center text-3xl font-semibold sm:text-4xl">Einfach sein, ohne Bewertung.</h2>
-      <p class="mx-auto mt-4 max-w-2xl text-center text-lg leading-relaxed text-base-content/75">Seelenmeer ist der Ort, an dem wir in alle Richtungen wachsen und uns treiben lassen dürfen – dahin, wo unsere Seele uns hinzieht, um neue Horizonte zu entdecken. Ich liebe es, Dinge zu hinterfragen, sodass durch neue Denkweisen neue Möglichkeiten entstehen – ein Netzwerk aus gegenseitiger Ermutigung, auch in Bildungskontexten und Schule.</p>
-      <div class="mt-14 grid gap-6 md:grid-cols-3">
+  <section id="coaching" class="scroll-mt-20 bg-base-200 py-24 md:py-32" aria-labelledby="coaching-title">
+    <div class="mx-auto max-w-3xl px-6">
+      <p class="eyebrow">Tauche ein</p>
+      <h2 id="coaching-title" class="font-display mt-4 text-3xl font-semibold sm:text-4xl">Coaching – Raum für dein Herz.</h2>
+      <div class="prose-meer mt-8 text-lg leading-relaxed">
+        <p class="font-display text-2xl text-primary sm:text-3xl">Was passiert, wenn Du innehältst? Du bist nicht hier, um nur zu funktionieren. Du bist hier, um dich zu erinnern.</p>
+        <p>Bist Du gerade an dem Punkt, wo es darum geht, eine Entscheidung für deine Zukunft zu treffen – beruflich einen neuen Weg einzuschlagen? Bist Du Schüler*in, Mama, Mensch, willst im Berufsleben loslegen oder etwas an deiner beruflichen oder persönlichen Situation verändern, weißt aber gar nicht genau, wohin die Reise gehen soll?</p>
+        <p>Du spürst, da ist etwas, das in dir schlummert – schon die ganze Zeit –, kannst es aber nicht genau benennen? Dich treibt eine innere Sehnsucht an und Du suchst jemanden, dem Du dich anvertrauen kannst, der dir dabei hilft, es herauszufinden?</p>
+        <p>Glückwunsch: Du bist damit nicht allein. Und wenn Du dir diese Frage(n) stellst, ist das bereits dein erster Schritt in ein erfüllteres Leben! <strong>Ich bin für dich da.</strong></p>
+      </div>
+      <div class="mt-12 border-accent/70 border-s-2 ps-6">
+        <p class="font-display text-2xl text-primary">Komm mit auf die Reise – zu Dir!</p>
+        <p class="mt-3 text-lg text-base-content/80">Hier bekommt dein Herz Raum. Einen Raum, in dem deine Ideen verrückt und deine Träume illusorisch sein dürfen, in dem Du deiner Seele lauschen kannst. Hier darfst Du einfach sein.</p>
+        <p class="mt-3 font-medium text-accent">Was ruft dich? Bringe es ins Leben!</p>
+      </div>
+    </div>
+    <div class="mx-auto mt-20 max-w-6xl px-6">
+      <p class="eyebrow">Zielgruppen</p>
+      <h3 class="font-display mt-4 text-2xl font-semibold sm:text-3xl">Für wen ist Coaching bei Seelenmeer?</h3>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
         <article class="card island border border-base-300/70 bg-base-100 shadow-sm">
           <div class="card-body">
-            <div class="text-accent" aria-hidden="true">
-              <svg class="size-9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
-                <path d="M2 9c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3"/>
-                <path d="M2 15c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3"/>
-                <path d="M7 20h10"/>
-              </svg>
-            </div>
-            <h3 class="card-title font-display">Sicherer Hafen</h3>
-            <p class="text-base-content/75">Ein geschützter Raum, in dem du durchatmen, Halt finden und deiner Seele lauschen kannst – bevor die Reise weitergeht.</p>
+            <h4 class="card-title font-display">Schüler*innen</h4>
+            <p class="text-base-content/75">Zwischen Schulabschluss, Erwartungen und der Frage: Wohin mit mir? Klarheit und Mut für den eigenen Weg finden.</p>
           </div>
         </article>
         <article class="card island border border-base-300/70 bg-base-100 shadow-sm">
           <div class="card-body">
-            <div class="text-accent" aria-hidden="true">
-              <svg class="size-9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="9"/>
-                <path d="m15 9-2.2 5-5 2.2L10 11.2 15 9z"/>
-              </svg>
-            </div>
-            <h3 class="card-title font-display">Neue Ufer</h3>
-            <p class="text-base-content/75">Zusammen finden wir Antworten auf deine Fragen: Berufung, Potenzial und mutige Entscheidungen – ohne Angst vor Fehlern.</p>
+            <h4 class="card-title font-display">Berufseinstieg</h4>
+            <p class="text-base-content/75">Du willst loslegen im Berufsleben, weißt aber noch nicht, welches Ufer dein Ziel ist? Gemeinsam entdecken wir deine Richtung.</p>
           </div>
         </article>
         <article class="card island border border-base-300/70 bg-base-100 shadow-sm">
           <div class="card-body">
-            <div class="text-accent" aria-hidden="true">
-              <svg class="size-9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 20.5s-7.2-4.6-9.2-9.2C1.5 8.4 3.4 5.5 6.6 5.5c2 0 3.6 1.1 5.4 3.1 1.8-2 3.4-3.1 5.4-3.1 3.2 0 5.1 2.9 3.8 5.8-2 4.6-9.2 9.2-9.2 9.2z"/>
-              </svg>
-            </div>
-            <h3 class="card-title font-display">Raum für dein Herz</h3>
-            <p class="text-base-content/75">Hier darf dein Herz Raum bekommen: Ideen dürfen verrückt, Träume illusorisch sein – und du darfst einfach sein.</p>
+            <h4 class="card-title font-display">Vor Veränderung</h4>
+            <p class="text-base-content/75">Etwas an deiner beruflichen oder persönlichen Situation soll sich bewegen – aber wie? Struktur für den nächsten Schritt.</p>
+          </div>
+        </article>
+        <article class="card island border border-base-300/70 bg-base-100 shadow-sm">
+          <div class="card-body">
+            <h4 class="card-title font-display">Die leise Sehnsucht</h4>
+            <p class="text-base-content/75">Etwas in dir schlummert schon lange und lässt dich nicht los. Hier bekommt es Raum, Stimme – und endlich eine Richtung.</p>
           </div>
         </article>
       </div>
     </div>
+    <div class="mx-auto mt-16 flex max-w-6xl px-6">
+      <div class="mx-auto w-full max-w-4xl">
+        <p class="eyebrow text-center">So beginnen wir</p>
+        <h3 class="font-display mt-4 text-center text-2xl font-semibold sm:text-3xl">Ablauf.</h3>
+        <ol class="mt-10 flow-root">
+          <li class="border-base-300/70 relative ps-14 pb-10">
+            <span class="bg-primary text-primary-content absolute start-0 top-0 flex size-9 items-center justify-center rounded-full text-sm font-semibold" aria-hidden="true">1</span>
+            <h4 class="font-display text-xl font-semibold">Kostenfreies Kennenlerngespräch</h4>
+            <p class="mt-2 text-lg text-base-content/80">Wir lernen uns kennen, klären deine Fragen und prüfen, ob wir zusammenpassen – unverbindlich und kostenfrei.</p>
+            <a href="#gespraech" class="btn btn-outline btn-sm mt-4">Termin anfragen</a>
+          </li>
+          <li class="border-base-300/70 relative ps-14 pb-10">
+            <span class="bg-primary text-primary-content absolute start-0 top-0 flex size-9 items-center justify-center rounded-full text-sm font-semibold" aria-hidden="true">2</span>
+            <h4 class="font-display text-xl font-semibold">Einzelcoaching</h4>
+            <p class="mt-2 text-lg text-base-content/80">In Einzelsitzungen gehen wir auf Entdeckungsreise: Fragen klären, Blockaden verstehen, neue Denkweisen zulassen – in deinem Tempo.</p>
+          </li>
+          <li class="border-base-300/70 relative ps-14">
+            <span class="bg-primary text-primary-content absolute start-0 top-0 flex size-9 items-center justify-center rounded-full text-sm font-semibold" aria-hidden="true">3</span>
+            <h4 class="font-display text-xl font-semibold">Coaching-Pakete</h4>
+            <p class="mt-2 text-lg text-base-content/80">Für tiefere Fragen und längere Wege: Pakete, die dich über mehrere Sitzungen hinweg zu neuen und lang ersehnten Ufern begleiten.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="mx-auto mt-16 max-w-3xl px-6">
+      <h3 class="font-display text-2xl font-semibold sm:text-3xl">Häufige Fragen.</h3>
+      <div class="mt-8 space-y-4">
+        <details class="collapse collapse-arrow border border-base-300/70 bg-base-100/70">
+          <summary class="collapse-title text-lg font-medium">Wie läuft das Kennenlerngespräch ab?</summary>
+          <div class="collapse-content"><p>Unverbindlich und kostenfrei: Wir lernen uns kennen, du schilderst dein Anliegen, und wir überlegen gemeinsam, ob das Coaching bei Seelenmeer der richtige Weg für dich ist.</p></div>
+        </details>
+        <details class="collapse collapse-arrow border border-base-300/70 bg-base-100/70">
+          <summary class="collapse-title text-lg font-medium">Was kostet ein Coaching?</summary>
+          <div class="collapse-content"><p>Preise auf Anfrage – im kostenfreien Kennenlerngespräch sprechen wir transparent über Form, Umfang und Konditionen.</p></div>
+        </details>
+        <details class="collapse collapse-arrow border border-base-300/70 bg-base-100/70">
+          <summary class="collapse-title text-lg font-medium">Online oder vor Ort?</summary>
+          <div class="collapse-content"><p>Sprich mich gerne an – gemeinsam finden wir eine Form, die zu dir passt.</p></div>
+        </details>
+      </div>
+    </div>
   </section>
 
-  <section class="py-24 md:py-32" aria-labelledby="cta-title">
-    <div class="mx-auto max-w-2xl px-6 text-center">
-      <div class="rounded-box border border-base-300 bg-base-100 p-10 shadow-sm md:p-14">
-        <h2 id="cta-title" class="font-display text-3xl font-semibold sm:text-4xl">Möchtest Du aufbrechen?</h2>
-        <p class="mt-4 text-lg leading-relaxed text-base-content/75">Der erste Schritt ist klein: ein kostenfreies Kennenlerngespräch. Danach entscheiden wir gemeinsam, wohin die Reise geht.</p>
-        <a href="kontakt.html#gespraech" class="btn btn-accent btn-lg mt-8">Jetzt Kennenlerngespräch buchen</a>
+  <section id="meditation" class="scroll-mt-20 py-24 text-center md:py-28" aria-labelledby="meditation-title">
+    <div class="mx-auto max-w-2xl px-6">
+      <p class="eyebrow">Tauche in Stille</p>
+      <h2 id="meditation-title" class="font-display mt-4 text-3xl font-semibold sm:text-4xl">Meditation.</h2>
+      <p class="mt-5 text-lg leading-relaxed text-base-content/75">Dieser Bereich entsteht gerade: künftig findest du hier Meditationsformate, die dir Raum geben, einfach zu sein und in alle Richtungen zu wachsen.</p>
+      <p class="mt-6"><span class="badge badge-accent badge-lg text-sm font-medium">Coming soon..!</span></p>
+      <div class="mt-8 flex flex-wrap items-center justify-center gap-4">
+        <a href="mailto:m.papadopoulos@seelenmeer.eu?subject=Meditation%20%E2%80%93%20Bitte%20benachrichtigen" class="btn btn-primary">Über den Start informieren</a>
+        <a href="#gespraech" class="btn btn-outline">Kennenlerngespräch</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt" class="scroll-mt-20 border-t border-base-300/70 bg-base-200/60 py-24 md:py-32" aria-labelledby="kontakt-title">
+    <div class="mx-auto max-w-6xl px-6">
+      <p class="eyebrow">Sag Hallo</p>
+      <h2 id="kontakt-title" class="font-display mt-4 text-3xl font-semibold sm:text-4xl">Geh den ersten Schritt und sag „Hallo“.</h2>
+      <p class="mt-4 max-w-2xl text-lg leading-relaxed text-base-content/75">Ich freue mich auf deine Nachricht – ohne Bewertung, mit Zeit für deine Fragen.</p>
+      <div class="mt-12 grid gap-12 md:grid-cols-[1fr_1.4fr]">
+
+      <aside class="card self-start border border-base-300/70 bg-base-100 shadow-sm">
+        <div class="card-body items-start">
+          <div class="arch flex h-40 w-32 items-end justify-center bg-gradient-to-b from-primary to-secondary pb-6" aria-hidden="true">
+            <span class="font-display text-4xl text-primary-content/90">MP</span>
+          </div>
+          <h3 class="card-title font-display mt-4 text-2xl">Maria Papadopoulos</h3>
+          <p class="text-base-content/70">Coachin &amp; Kulturanthropologin<br>Hinter Seelenmeer Coaching</p>
+          <div class="mt-4 divider"></div>
+          <div>
+            <h4 class="text-sm font-semibold tracking-wider uppercase opacity-60">E-Mail</h4>
+            <div class="mt-2 flex flex-wrap items-center gap-2">
+              <a class="link link-primary font-medium" href="mailto:m.papadopoulos@seelenmeer.eu">m.papadopoulos@seelenmeer.eu</a>
+              <button class="btn btn-ghost btn-xs" type="button" data-copy="m.papadopoulos@seelenmeer.eu">E-Mail kopieren</button>
+            </div>
+          </div>
+          <p class="mt-4 text-sm opacity-60">Du erhältst in der Regel innerhalb weniger Tage eine Antwort.</p>
+        </div>
+      </aside>
+
+      <div id="gespraech" class="scroll-mt-28">
+        <h3 class="font-display text-2xl font-semibold text-primary sm:text-3xl">Buche dein kostenfreies Kennenlerngespräch.</h3>
+        <p class="mt-3 max-w-2xl text-lg leading-relaxed text-base-content/75">Sag mir kurz, wer du bist und was dich bewegt. Das Formular öffnet dein E-Mail-Programm mit einer fertigen Nachricht – mehr ist nicht nötig.</p>
+        <form class="fieldset grid gap-5 sm:grid-cols-2" data-mailto="m.papadopoulos@seelenmeer.eu">
+          <fieldset class="contents">
+            <label class="font-medium" for="name">Dein Name</label>
+            <input class="input w-full" id="name" name="name" type="text" autocomplete="name" required>
+            <label class="font-medium" for="email">Deine E-Mail-Adresse</label>
+            <input class="input w-full" id="email" name="email" type="email" autocomplete="email" required>
+          </fieldset>
+          <label class="font-medium" for="anliegen">Worum geht es?</label>
+          <select class="select w-full" id="anliegen" name="anliegen" required>
+            <option value="" disabled selected>Bitte wählen</option>
+            <option>Kostenfreies Kennenlerngespräch</option>
+            <option>Coaching für Jugendliche</option>
+            <option>Coaching für Erwachsene</option>
+            <option>Meditation (Coming soon)</option>
+            <option>Etwas anderes</option>
+          </select>
+          <label class="font-medium" for="nachricht">Deine Nachricht</label>
+          <textarea class="textarea w-full" id="nachricht" name="nachricht" rows="6" required placeholder="Was bewegt dich gerade? Worauf wartest du?"></textarea>
+          <div class="sm:col-span-2 flex flex-wrap items-center gap-4">
+            <button class="btn btn-accent btn-lg" type="submit">Nachricht senden</button>
+            <noscript><p>Ohne JavaScript: schreib mir direkt an <a class="link link-primary" href="mailto:m.papadopoulos@seelenmeer.eu">m.papadopoulos@seelenmeer.eu</a>.</p></noscript>
+          </div>
+        </form>
+      </div>
+
       </div>
     </div>
   </section>
@@ -238,10 +351,10 @@
     <nav aria-label="Fußnavigation">
       <h2 class="footer-title opacity-60">Seiten</h2>
       <ul class="mt-3 space-y-1">
-        <li><a class="link link-hover" href="index.html">Home</a></li>
-        <li><a class="link link-hover" href="coaching.html">Coaching</a></li>
-        <li><a class="link link-hover" href="meditation.html">Meditation</a></li>
-        <li><a class="link link-hover" href="kontakt.html">Kontakt</a></li>
+        <li><a class="link link-hover" href="#home">Home</a></li>
+        <li><a class="link link-hover" href="#coaching">Coaching</a></li>
+        <li><a class="link link-hover" href="#meditation">Meditation</a></li>
+        <li><a class="link link-hover" href="#kontakt">Kontakt</a></li>
         <li><a class="link link-hover" href="impressum.html">Impressum</a></li>
       </ul>
     </nav>
@@ -249,7 +362,7 @@
       <h2 class="footer-title opacity-60">Kontakt</h2>
       <p class="mt-3">Maria Papadopoulos</p>
       <p><a class="link link-hover" href="mailto:m.papadopoulos@seelenmeer.eu">m.papadopoulos@seelenmeer.eu</a></p>
-      <a href="kontakt.html#gespraech" class="btn btn-accent btn-sm mt-4">Kennenlerngespräch</a>
+      <a href="#gespraech" class="btn btn-accent btn-sm mt-4">Kennenlerngespräch</a>
     </div>
   </div>
   <p class="mt-10 text-center text-sm opacity-60">© <span data-year>2026</span> Seelenmeer</p>

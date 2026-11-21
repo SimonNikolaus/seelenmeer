@@ -47,3 +47,36 @@ if (form) {
     window.location.href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   });
 }
+
+const navLinks = new Map();
+for (const link of document.querySelectorAll("[data-nav]")) {
+  navLinks.set(link.dataset.nav, link);
+}
+if (navLinks.size) {
+  const sections = [...navLinks.keys()]
+    .map((id) => document.getElementById(id))
+    .filter(Boolean);
+  const setActive = (id) => {
+    for (const [key, link] of navLinks) {
+      link.classList.toggle("menu-active", key === id);
+      if (key === id) {
+        link.setAttribute("aria-current", "true");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    }
+  };
+  const observer = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        if (entry.isIntersecting) {
+          setActive(entry.target.id);
+        }
+      }
+    },
+    { rootMargin: "-40% 0px -55% 0px" },
+  );
+  for (const section of sections) {
+    observer.observe(section);
+  }
+}
