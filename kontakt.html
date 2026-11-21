@@ -59,7 +59,7 @@
 
 <a class="btn btn-secondary btn-sm skip-link" href="#main">Zum Inhalt springen</a>
 
-<header class="navbar sticky top-0 z-50 border-b border-base-300/60 bg-base-100/85 px-4 backdrop-blur sm:px-6">
+<header class="navbar sticky top-0 z-50 border-b border-base-300/60 bg-base-100/90 px-4 backdrop-blur sm:px-6">
   <div class="flex-1">
     <a href="index.html" class="flex items-center gap-2" aria-label="Seelenmeer Coaching – Startseite">
       <svg class="size-8 text-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
@@ -71,11 +71,11 @@
   </div>
   <nav class="hidden md:block" aria-label="Hauptnavigation">
     <ul class="menu menu-horizontal gap-1 px-1">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="coaching.html">Coaching</a></li>
-      <li><a href="meditation.html">Meditation</a></li>
-      <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
-      <li><a href="impressum.html">Impressum</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="coaching.html">Coaching</a></li>
+        <li><a href="meditation.html">Meditation</a></li>
+        <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
     </ul>
   </nav>
   <div class="hidden md:flex">
@@ -100,45 +100,32 @@
 
 <main id="main" class="flex-1">
 
-  <section class="hero-sea grain relative overflow-hidden text-base-100" aria-labelledby="kontakt-title">
-    <div class="mx-auto max-w-4xl px-6 pt-20 pb-36 text-center md:pb-44">
-      <div aria-hidden="true">
-        <ol class="badge badge-lg mb-8 gap-1 border-white/25 bg-white/10 text-sm text-base-100">
-          <li><a class="opacity-80 hover:opacity-100" href="index.html">Home</a></li>
-          <li aria-hidden="true" class="opacity-60">/</li>
+<section class="hero-wash relative border-b border-base-300/70" aria-labelledby="kontakt-title">
+    <div class="mx-auto max-w-6xl px-6 py-20 md:py-28">
+      <nav aria-label="Brotkrumen" class="text-sm text-base-content/60">
+        <ol class="flex gap-2">
+          <li><a href="index.html" class="link link-hover">Home</a></li>
+          <li aria-hidden="true">/</li>
           <li aria-current="page">Kontakt</li>
         </ol>
-      </div>
-      <h1 id="kontakt-title" class="font-display text-4xl leading-tight font-semibold sm:text-6xl">Geh den ersten Schritt und sag „Hallo“.</h1>
-      <p class="mx-auto mt-6 max-w-2xl text-lg opacity-90">Ich freue mich auf deine Nachricht – ohne Bewertung, mit Zeit für deine Fragen.</p>
-    </div>
-    <div class="bubbles" aria-hidden="true">
-      <b style="--x:9%;--s:10px;--d:7s;--delay:-2s"></b>
-      <b style="--x:24%;--s:15px;--d:9s;--delay:-11s"></b>
-      <b style="--x:41%;--s:7px;--d:7s;--delay:-5s"></b>
-      <b style="--x:63%;--s:13px;--d:9s;--delay:-2s"></b>
-      <b style="--x:79%;--s:9px;--d:7s;--delay:-9s"></b>
-      <b style="--x:92%;--s:17px;--d:7s;--delay:-11s"></b>
-    </div>
-    <div class="pointer-events-none absolute inset-x-0 bottom-0" aria-hidden="true">
-      <svg class="block h-16 w-full text-base-100 min-[640px]:h-24" viewBox="0 0 1440 120" preserveAspectRatio="none">
-        <path fill="currentColor" d="M0 70c90-20 190 20 290 26s200-30 300-30 200 26 300 26 200-36 300-36 200 30 250 34v56H0Z"/>
-      </svg>
+      </nav>
+      <p class="eyebrow mt-8">Sag Hallo</p>
+      <h1 id="kontakt-title" class="font-display mt-4 max-w-3xl text-4xl leading-[1.15] font-semibold sm:text-5xl md:text-6xl">Geh den ersten Schritt und sag „Hallo“.</h1>
+      <p class="mt-6 max-w-2xl text-lg leading-relaxed text-base-content/80">Ich freue mich auf deine Nachricht – ohne Bewertung, mit Zeit für deine Fragen.</p>
     </div>
   </section>
 
-  <section id="gespraech" class="mx-auto max-w-6xl scroll-mt-24 px-6 py-16 md:py-24" aria-label="Kontakt und Kennenlerngespräch">
-    <div class="grid gap-10 md:grid-cols-[1fr_1.4fr]">
+  <section id="gespraech" class="mx-auto max-w-6xl scroll-mt-24 py-20 md:py-28" aria-label="Kontakt und Kennenlerngespräch">
+    <div class="px-6">
+      <div class="grid gap-12 md:grid-cols-[1fr_1.4fr]">
 
-      <aside class="card self-start border border-base-300 bg-base-200/60 shadow-sm">
+      <aside class="card self-start border border-base-300/70 bg-base-200/60 shadow-sm">
         <div class="card-body items-start">
-          <div class="avatar avatar-placeholder" aria-hidden="true">
-            <div class="hero-sea text-base-100 size-20 rounded-full">
-              <span class="font-display text-2xl">MP</span>
-            </div>
+          <div class="arch flex h-40 w-32 items-end justify-center bg-gradient-to-b from-primary to-secondary pb-6" aria-hidden="true">
+            <span class="font-display text-4xl text-primary-content/90">MP</span>
           </div>
-          <h2 class="card-title font-display mt-2 text-2xl">Maria Papadopoulos</h2>
-          <p class="text-base-content/80">Coachin &amp; Kulturanthropologin<br>Hinter Seelenmeer Coaching</p>
+          <h2 class="card-title font-display mt-4 text-2xl">Maria Papadopoulos</h2>
+          <p class="text-base-content/70">Coachin &amp; Kulturanthropologin<br>Hinter Seelenmeer Coaching</p>
           <div class="mt-4 divider"></div>
           <div>
             <h3 class="text-sm font-semibold tracking-wider uppercase opacity-60">E-Mail</h3>
@@ -147,13 +134,13 @@
               <button class="btn btn-ghost btn-xs" type="button" data-copy="m.papadopoulos@seelenmeer.eu">E-Mail kopieren</button>
             </div>
           </div>
-          <p class="mt-4 text-sm opacity-70">Du erhältst in der Regel innerhalb weniger Tage eine Antwort.</p>
+          <p class="mt-4 text-sm opacity-60">Du erhältst in der Regel innerhalb weniger Tage eine Antwort.</p>
         </div>
       </aside>
 
       <div>
         <h2 class="font-display text-3xl font-semibold text-primary sm:text-4xl">Buche dein kostenfreies Kennenlerngespräch.</h2>
-        <p class="mt-3 max-w-2xl text-lg">Sag mir kurz, wer du bist und was dich bewegt. Das Formular öffnet dein E-Mail-Programm mit einer fertigen Nachricht – mehr ist nicht nötig.</p>
+        <p class="mt-3 max-w-2xl text-lg leading-relaxed text-base-content/75">Sag mir kurz, wer du bist und was dich bewegt. Das Formular öffnet dein E-Mail-Programm mit einer fertigen Nachricht – mehr ist nicht nötig.</p>
         <form class="fieldset grid gap-5 sm:grid-cols-2" data-mailto="m.papadopoulos@seelenmeer.eu">
           <fieldset class="contents">
             <label class="font-medium" for="name">Dein Name</label>
@@ -179,22 +166,23 @@
         </form>
       </div>
 
+      </div>
     </div>
   </section>
 
 </main>
 
-<footer class="mt-20 bg-neutral px-6 py-12 text-neutral-content md:py-16">
+<footer class="mt-24 bg-neutral px-6 py-14 text-neutral-content md:py-16">
   <div class="mx-auto grid max-w-6xl gap-10 text-center md:grid-cols-3 md:text-start">
     <div>
       <div class="flex items-center justify-center gap-2 md:justify-start">
-        <svg class="size-7 text-secondary" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+        <svg class="size-7 text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
           <path d="M2 9.5c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3"/>
           <path d="M2 15c2.5 0 2.5-3 5-3s2.5 3 5 3 2.5-3 5-3 2.5 3 5 3"/>
         </svg>
         <span class="font-display text-xl font-semibold">Seelenmeer</span>
       </div>
-      <p class="mt-3 max-w-xs text-sm opacity-80 md:mx-0">Der Ort, an dem wir einfach sein können – ohne Bewertung, auf dem Weg zu neuen Horizonten.</p>
+      <p class="mt-3 max-w-xs text-sm opacity-75 md:mx-0">Innere Weite, Orientierung und Entwicklung – der Ort, an dem du einfach sein kannst.</p>
     </div>
     <nav aria-label="Fußnavigation">
       <h2 class="footer-title opacity-60">Seiten</h2>
@@ -215,6 +203,5 @@
   </div>
   <p class="mt-10 text-center text-sm opacity-60">© <span data-year>2026</span> Seelenmeer</p>
 </footer>
-
 </body>
 </html>

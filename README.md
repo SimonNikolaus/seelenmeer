@@ -46,8 +46,12 @@ freundlich, System-Schriftstacks statt herange ladener Webfonts).
 
 1. Impressum: Straße/Hausnummer und Ort der
    Maria Papadopoulos eintragen, Datenschutzerklärung anlegen und verlinken.
-2. Optional echte Fotos statt der SVG-Avatare – `og-cover.svg` gegen ein
-   PNG/JPG (1200×630) tauschen, da einige Plattformen kein SVG für OG-Bilder
-   unterstützen.
+2. Authentische Bilder einsetzen: Im Home-Hero eine echte
+   Portraitaufnahme von Maria einfügen (Rahmen: `.arch`, warmes Sand-Grüßen
+   oben rund) und die Caption „Portraitfoto folgt“ entfernen. Landschafts-
+   bilder in ruhigen Naturtönen ergänzen die Sektionen gut; auf Stock-Optik
+   mit glatten Posen verzichten.
+3. `og-cover.svg` gegen ein PNG/JPG (1200×630) tauschen, da einige
+   Plattformen kein SVG für OG-Bilder unterstützen.
 3. Kontaktformular nutzt `mailto:`; für echten Mailversand später ein
    Formular-Backend (z. B. formsimple, Netlify Forms, eigener Endpoint) anbinden.
