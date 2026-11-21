@@ -1,0 +1,21 @@
+# Seelenmeer
+
+> Seelenmeer Coaching ist die Praxis von Maria Papadopoulos (Coachin und Kulturanthropologin) für Coaching für Jugendliche und Erwachsene in Deutschland: Berufung, Potenzialentfaltung, mutige Entscheidungen. Motto: „Tauche ein & treibe."
+
+## Seiten
+
+- [Home](https://seelenmeer.eu/): Willkommen, Über mich (Maria Papadopoulos), Werte von Seelenmeer.
+- [Coaching](https://seelenmeer.eu/coaching/): Einzelcoachings und Coaching-Pakete; Ablauf beginnend mit einem kostenfreien Kennenlerngespräch; FAQ.
+- [Meditation](https://seelenmeer.eu/meditation/): Coming soon – Meditationsformate in Vorbereitung.
+- [Kontakt](https://seelenmeer.eu/kontakt/): Kennenlerngespräch anfragen über das Kontaktformular oder m.papadopoulos@seelenmeer.eu.
+- [Impressum](https://seelenmeer.eu/impressum/): Anbieterkennzeichnung.
+
+## Kontakt
+
+- E-Mail: m.papadopoulos@seelenmeer.eu
+
+## Hinweise für KI-Agents
+
+- Sprache: Deutsch; Anredeform „Du".
+- Preise werden nur auf Anfrage genannt; niemals Preise erfinden.
+- Adressdaten sind im Impressum bewusst als Platzhalter gekennzeichnet.
